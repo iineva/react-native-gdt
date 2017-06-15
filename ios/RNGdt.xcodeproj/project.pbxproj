@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B3E7B58A1CC2AC0600A0062D /* RNGdt.m in Sources */ = {isa = PBXBuildFile; fileRef = B3E7B5891CC2AC0600A0062D /* RNGdt.m */; };
+		B00FA5C41EF120BF00AA460C /* RNGDTBannerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B00FA5C31EF120BF00AA460C /* RNGDTBannerManager.m */; };
+		B00FA5D61EF123BB00AA460C /* libGDTMobSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B00FA5C11EF11AD900AA460C /* libGDTMobSDK.a */; };
+		B0F632C31EF1809700F5E648 /* RNGDTBanner.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F632C21EF1809700F5E648 /* RNGDTBanner.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,8 +26,16 @@
 
 /* Begin PBXFileReference section */
 		134814201AA4EA6300B7C361 /* libRNGdt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNGdt.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		B3E7B5881CC2AC0600A0062D /* RNGdt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGdt.h; sourceTree = "<group>"; };
-		B3E7B5891CC2AC0600A0062D /* RNGdt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGdt.m; sourceTree = "<group>"; };
+		B00FA5BC1EF11AD900AA460C /* GDTMobBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDTMobBannerView.h; sourceTree = "<group>"; };
+		B00FA5BD1EF11AD900AA460C /* GDTTrack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDTTrack.h; sourceTree = "<group>"; };
+		B00FA5BE1EF11AD900AA460C /* GDTNativeAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDTNativeAd.h; sourceTree = "<group>"; };
+		B00FA5BF1EF11AD900AA460C /* GDTMobInterstitial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDTMobInterstitial.h; sourceTree = "<group>"; };
+		B00FA5C01EF11AD900AA460C /* GDTSplashAd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDTSplashAd.h; sourceTree = "<group>"; };
+		B00FA5C11EF11AD900AA460C /* libGDTMobSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGDTMobSDK.a; sourceTree = "<group>"; };
+		B00FA5C21EF120BF00AA460C /* RNGDTBannerManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGDTBannerManager.h; sourceTree = "<group>"; };
+		B00FA5C31EF120BF00AA460C /* RNGDTBannerManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGDTBannerManager.m; sourceTree = "<group>"; };
+		B0F632C11EF1809700F5E648 /* RNGDTBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNGDTBanner.h; sourceTree = "<group>"; };
+		B0F632C21EF1809700F5E648 /* RNGDTBanner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNGDTBanner.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00FA5D61EF123BB00AA460C /* libGDTMobSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,10 +61,26 @@
 		58B511D21A9E6C8500147676 = {
 			isa = PBXGroup;
 			children = (
-				B3E7B5881CC2AC0600A0062D /* RNGdt.h */,
-				B3E7B5891CC2AC0600A0062D /* RNGdt.m */,
+				B00FA5BB1EF11AD900AA460C /* GDT */,
+				B0F632C11EF1809700F5E648 /* RNGDTBanner.h */,
+				B0F632C21EF1809700F5E648 /* RNGDTBanner.m */,
+				B00FA5C21EF120BF00AA460C /* RNGDTBannerManager.h */,
+				B00FA5C31EF120BF00AA460C /* RNGDTBannerManager.m */,
 				134814211AA4EA7D00B7C361 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		B00FA5BB1EF11AD900AA460C /* GDT */ = {
+			isa = PBXGroup;
+			children = (
+				B00FA5BC1EF11AD900AA460C /* GDTMobBannerView.h */,
+				B00FA5BD1EF11AD900AA460C /* GDTTrack.h */,
+				B00FA5BE1EF11AD900AA460C /* GDTNativeAd.h */,
+				B00FA5BF1EF11AD900AA460C /* GDTMobInterstitial.h */,
+				B00FA5C01EF11AD900AA460C /* GDTSplashAd.h */,
+				B00FA5C11EF11AD900AA460C /* libGDTMobSDK.a */,
+			);
+			path = GDT;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B3E7B58A1CC2AC0600A0062D /* RNGdt.m in Sources */,
+				B00FA5C41EF120BF00AA460C /* RNGDTBannerManager.m in Sources */,
+				B0F632C31EF1809700F5E648 /* RNGDTBanner.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,12 +225,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-				"$(inherited)",
+					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GDT",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNGdt;
 				SKIP_INSTALL = YES;
@@ -218,7 +249,10 @@
 					"$(SRCROOT)/../../../React/**",
 					"$(SRCROOT)/../../react-native/React/**",
 				);
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GDT",
+				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = RNGdt;
 				SKIP_INSTALL = YES;
