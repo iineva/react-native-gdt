@@ -24,7 +24,7 @@
         [self.bannerView removeFromSuperview];
     }
     self.bannerView = [[GDTMobBannerView alloc] initWithFrame:self.bounds
-                                                       appkey:appInfo[@"appKey"]
+                                                       appkey:appInfo[@"appId"]
                                                   placementId:appInfo[@"placementId"]];
     self.bannerView.delegate = self;
     self.bannerView.currentViewController = [[[[UIApplication sharedApplication] delegate] window] rootViewController];
