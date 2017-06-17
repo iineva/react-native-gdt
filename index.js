@@ -19,11 +19,13 @@ export class Banner extends Component {
     interval: PropTypes.number,
     /**
      *  GPS精准广告定位模式开关,默认Gps关闭
+     *  iOS only
      *  详解：[可选]GPS精准定位模式开关，YES为开启GPS，NO为关闭GPS，建议设为开启，可以获取地理位置信息，提高广告的填充率，增加收益。
      */
     isGpsOn: PropTypes.bool,
     /**
      *  Banner展现和轮播时的动画效果开关，默认打开
+     *  iOS only
      */
     isAnimationOn: PropTypes.bool,
     /**
