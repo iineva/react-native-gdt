@@ -36,9 +36,29 @@
 
 ## Usage
 ```javascript
-import RNGdt from 'react-native-gdt';
+import React from 'react'
+import {View, Platform} from 'react-native'
+import {Banner} from 'react-native-gdt'
 
-// TODO: What to do with the module?
-RNGdt;
+class App extends React.Component {
+
+  state = {
+    adHeight: 0,
+  }
+
+  render = ()=>(
+    <View>
+      <Banner
+        style={{height: this.state.adHeight}}
+        appInfo={Platform.select({
+          ios: {appId: '1106150743', placementId: '9020922393993042'},
+          android: {appId: '1106224940', placementId: '8020023303787286'},
+        })}
+        onReceived={()=>this.setState({adHeight: 50})}
+        onFailToReceived={(err)=>console.error(err)}
+      />
+    </View>
+  )
+}
 ```
   
